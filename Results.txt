@@ -1,0 +1,11 @@
+
+======= POST RACE STATISTICS =======
+
+Player Name: Bach
+Driver Name: Vettel
+Total Time: 140.9
+Fuel Remaining: 1.1
+Total points: 308
+Result: 6th -- lost the Championship
+Championship: 4
+____________________________________

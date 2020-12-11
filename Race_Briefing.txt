@@ -1,0 +1,32 @@
+================ PRE-RACE BRIEFING ================
+
+* For the very last race weekend, 
+  you’ve been tasked by Ferrari F1 Team 
+  to be a substitute for Sebastian Vettel’s 
+  race engineer due to his primary one 
+  having to quarantine because of covid. 
+
+* Vettel is up 16 points from the runner 
+  up racer Lewis Hamilton, and would only 
+  need to secure a 5th place finish to be 
+  able to win this 5th Driver’s World Championship.
+
+* Unfortunately for this weekend, Vettel had 
+  to take a 10 place grid penalty because he 
+  needed his engine to be replaced. 
+
+* Vettel qualified on pole (1st) during Saturday 
+  qualifying session, which would mean that 
+  he will start in 11th place after the grid 
+  penalty is applied.
+
+* It is anticipated that Hamilton will be dominant 
+  with Vettel out of the front running equation, 
+  which means that he will most likely win the race 
+  and score 25 points.
+
+* With this prediction in mind, your task is to make 
+  sure that Vettel finishes 5th place or higher 
+  (score at least 10 points).
+____________________________________________________
+
