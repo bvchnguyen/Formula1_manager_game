@@ -1,13 +1,9 @@
-// CS1300 Fall 2020
-// Author: Bach Nguyen
-// Recitation: 505 -- Madhusudhan Aithal
-// Project 3 -- Car implimentation file
+// car - implementation file
 
-#include "Car.h"
+#include "car.h"
 #include <string>
-using namespace std;
 
-Car::Car() // Initialized default constructor
+car::car() // Initialized default constructor
 {
     static const int total_lap = 70;
     static const int fuel_load = 110;
@@ -16,16 +12,15 @@ Car::Car() // Initialized default constructor
     laptime = 0;
     total_time = 0;
     lap_count = 0;
-
 }
-Car::Car(string tyre_choice, int current_fuel, int time, int laps) // Initialized parameterized constructor
+car::car(string tyre_choice, int current_fuel, int time, int laps) // Initialized parameterized constructor
 {
    tyre = tyre_choice; 
    fuel = current_fuel;
    total_time = time;
    lap_count = laps;
 }
-void Car::setCarTyre(int input) // Set the current tyre that the racer is racing on
+void car::setCarTyre(int input) // Set the current tyre that the racer is racing on
 {
     if (input == 1) // For soft compound
     {
@@ -40,14 +35,14 @@ void Car::setCarTyre(int input) // Set the current tyre that the racer is racing
         tyre = "Hard";
     }
 }
-void Car::setCarFuel(double fuel_burn) // This will set the fuel flow rate base on user's input in main
+void car::setCarFuel(double fuel_burn) // This will set the fuel flow rate base on user's input in main
 {   
     for (int i = 0; i < 10; i++)
     {
         fuel = fuel - fuel_burn;
     }
 }
-void Car::setLapTimes(int tyre_input, int command) // Set the lap time based on user's input in main
+void car::setLapTimes(int tyre_input, int command) // Set the lap time based on user's input in main
 {   
     if (tyre_input == 1) // If soft compound is chosen
     {
@@ -99,23 +94,23 @@ void Car::setLapTimes(int tyre_input, int command) // Set the lap time based on 
         total_time += laptime;
     }
 }
-void Car::setCarLaps(int laps) // set the current lap that user's on
+void car::setCarLaps(int laps) // set the current lap that user's on
 {
     lap_count = laps;
 }
-string Car::getCarTyre() // Return the tyre chosen
+string car::getCarTyre() // Return the tyre chosen
 {
     return tyre;
 }
-double Car::getCarFuel() // Return the total fuel
+double car::getCarFuel() // Return the total fuel
 {
     return fuel;
 }
-double Car::getLapTimes() // Return the time taken to complete the race (70 laps)
+double car::getLapTimes() // Return the time taken to complete the race (70 laps)
 {
     return total_time;
 }
-int Car::getCarLaps() // Return driver's current lap count
+int car::getCarLaps() // Return driver's current lap count
 {
     return lap_count;
 }
