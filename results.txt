@@ -1,4 +1,3 @@
-
 ======= POST RACE STATISTICS =======
 
 Player Name: Bach
