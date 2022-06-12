@@ -1,20 +1,17 @@
-// CS1300 Fall 2020
-// Author: Bach Nguyen
-// Recitation: 505 -- Madhusudhan Aithal
-// Project 3 - Header files
+// Car - header
 
-#ifndef Car_H
-#define Car_H
+#ifndef car_H
+#define car_H
 #include <string>
 
 using namespace std; 
 
-class Car
+class car
 {
     public:
         
-        Car();
-        Car(string tyre_choice, int current_fuel, int time, int laps);
+        car();
+        car(string tyre_choice, int current_fuel, int time, int laps);
         void setCarTyre(int input);
         void setCarFuel(double fuel_burn);
         void setLapTimes(int tyre_input, int command);
