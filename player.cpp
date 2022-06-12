@@ -3,26 +3,25 @@
 // Recitation: 505 -- Madhusudhan Aithal
 // Project 3 -- Player implimentation file
 
-#include "Player.h"
+#include "player.h"
 #include <string>
-using namespace std;
 
-Player::Player() // Intialized default constructors
+player::player() // Intialized default constructors
 {
     player_name = "";
     
 }
-Player::Player(string p_name) //Intialized parameterized constructors
+player::player(string p_name) //Intialized parameterized constructors
 {
     player_name = p_name;
 }
 
-void Player::setPlayerName(string p_name) // Set player's name based on input
+void player::setPlayerName(string p_name) // Set player's name based on input
 {
     player_name = p_name;
 }
 
-string Player::getPlayerName() const // Return player's name
+string player::getPlayerName() const // Return player's name
 {
     return player_name;
 }
