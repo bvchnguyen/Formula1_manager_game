@@ -1,4 +1,4 @@
-# Formula1_manager_game
+# Formula1 Manager Game
 
 A turn-based game inspired by the role of a racer's personal engineer in the racing sport Formula 1.
 
@@ -24,10 +24,31 @@ Your task is to make sure that Vettel finishes 5th place or higher (score at lea
 
 ![](https://www.tutorialspoint.com/formula_one/images/championship_points.jpg)
 
-## Tyres Choices: 
+## Tire Choices: 
 
-<span style="background-color: #FFFF00">SOFT</span>
+SOFT - Fastest tire compound. However, the tire will wear much quicker. Pirelli (the tire maker) has predicted that tire wear will cause time drop off after 10 laps.
+
+MEDIUM - A harder compound, but will be more durable than the soft compound at the trade off that it’s a little bit slower. Pirelli has predicted that tire wear will cause time drop off after 20 laps.
+
+HARD - The hardest compound. This will be the slowest but MOST DURABLE compound. Pirelli has predicted that drivers will see drop off around 30 laps.
 
 ## Constraints:
 
 * During a Formula 1 race, you are allowed to only have 110 kg of fuel with no refueling allowed.
+* Tyre failure happens quite often during a race weekend, especially if the driver races on the same compound past their recommended limit. If you instruct Vettel to drive past the compound’s recommended limit, the chance of Vettel suffering a tyre failure and DNF will be ⅓ (33% every 10 laps)
+* The starting fuel flow rate is 1.57 kg / per lap. The average fuel consumption per lap when Vettel does a pit stop will also average out to about the same flow per lap.
+* Everytime you task Vettel to push, the lap times will increase by 0.3 seconds per lap (according to their tyre compound), but fuel will be consumed at 7% more than normal pace. If you task Vettel to conserve fuel, lap times will decrease by 0.3 seconds per lap (according to their tyre compound), but fuel will be consumed at 13% less than normal pace.
+  * (START) 1.57 kg / per lap
+  * (PUSH) 1.57 kg / per lap -----> 1.67 kg / per lap
+  * (CONSERVE FUEL) 1.57 kg / per lap  -----> 1.37 kg / per lap
+  * (PIT)  1.57 kg / per lap
+* When you task Vettel to come into the pits for new fresh tyres, about 30 seconds will be added onto your time (1 lap only, not the entire 10 laps check-in). Typically, racers will do about 2-3 pit stops per race. 
+
+
+## Instructions:
+
+After the start, you will be checking in with your driver after every 10 laps to provide an update. In each update, you will provide Vettel with what lap he’s on, current tyre compound, fuel, and the sum of his time so far in the race. 
+
+In each update, you will be given the option to task Vettel with push (go faster), conserve fuel (go slower) or pit stop (change tyres).
+
+# Make sure you watch the fuel flow and manage the tyres accordingly. Goodluck!
