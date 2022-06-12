@@ -1,20 +1,18 @@
-// CS1300 Fall 2020
-// Author: Bach Nguyen
-// Recitation: 505 -- Madhusudhan Aithal
-// Project 3 - Header files
+// driver - Header files
 
-#ifndef Driver_H
-#define Driver_H
+#ifndef driver_H
+#define driver_H
 #include <string>
+
 using namespace std; 
 
-class Driver
+class driver
 {
 
     public:
 
-        Driver();
-        Driver(string driver_name, string out_come, int total_points, int total_championship);
+        driver();
+        driver(string driver_name, string out_come, int total_points, int total_championship);
         void setDriverName(string driver_name);
         void setDriverPoints(int gained_points);
         void setDriverChampionship(int result);
