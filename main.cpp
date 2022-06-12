@@ -39,7 +39,7 @@ int main()
     car Ferrari;
 
     //cout << "Welcome to the Formula 1 Manager Game!" << endl; // Welcome header
-    play.printInterface("HeaderWelcome.txt");
+    play.printInterface("display_text/headerWelcome.txt");
     // Main menu
     while (x != 4 && x != 5) // Only runs when x is not 3 (going into the game) or 4 (exit game)
     {
@@ -62,11 +62,11 @@ int main()
                         {
                             if (z == 1)
                             {
-                                play.printInterface("Race_Briefing.txt"); // Race background
+                                play.printInterface("race_briefing.txt"); // Race background
                             }
                             else if (z == 2)
                             {
-                                play.printInterface("Instructions.txt"); // Instructions for the race
+                                play.printInterface("display_text/instructions.txt"); // Instructions for the race
                             }
                             else if (z == 3)
                             {
@@ -82,13 +82,13 @@ int main()
                 
                 case 2:
                     // Print point system from text file
-                    play.printInterface("Points_Systems.txt");
+                    play.printInterface("display_text/points_systems.txt");
                     break;
 
                 case 3:
 
                     // Print the current championship standing
-                    play.printInterface("Championship_standing.txt");
+                    play.printInterface("display_text/championship_standing.txt");
 
                     break;
 
@@ -274,7 +274,7 @@ int IDverify(string engineer_name)
     }
 return 1;
 }
-double tireWear(int counter, int tyre_choice, Car Ferrari)
+double tireWear(int counter, int tyre_choice, car Ferrari)
 {
     // This function will take in a count checker, the tyre choice and the lap time to compute tyre wear 
 
@@ -329,7 +329,7 @@ double tireWear(int counter, int tyre_choice, Car Ferrari)
     }
 return increase;
 }
-int getResult(int lap, int checker, double time, Car Ferrari, Driver Vettel)
+int getResult(int lap, int checker, double time, car Ferrari, driver Vettel)
 {
     // This function will return a value depending on the final result
     if (time <= 140.00 && Ferrari.getCarFuel() > 0 && checker == 0) // If Vettel finish 5th place (less than or equal to 140 minutes and finish with fuel left)
@@ -346,7 +346,7 @@ int getResult(int lap, int checker, double time, Car Ferrari, Driver Vettel)
     }
 return 1;
 }
-void printStats(int lap, double time, Car Ferrari, Driver Vettel)
+void printStats(int lap, double time, car Ferrari, driver Vettel)
 {   
     // This function will print the stats of Vettel (current lap, fuel, time, and tyres)
 
@@ -359,7 +359,7 @@ void printStats(int lap, double time, Car Ferrari, Driver Vettel)
 
 return;
 }
-void recordResults(int outcome, int counter, Car Ferrari, Driver Vettel, Player engineer)
+void recordResults(int outcome, int counter, car Ferrari, driver Vettel, player engineer)
 {
     // This function will print the result into a text file
     Vettel.setDriverName("Vettel");
